@@ -1,0 +1,85 @@
+body {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(black, grey, black);
+    background-repeat: no-repeat;
+    height: 55vw;
+}
+
+.center {
+    background-color: #fff;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.747);
+    border-radius: 50px;
+    height: 550px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    flex-direction: initial;
+}
+
+input {
+    width: 250px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+input:hover {
+    border: none;
+    border-bottom: solid 1px grey;
+    transition: 0.1s;
+}
+
+input::placeholder {
+    color: black;
+    text-align: start;
+}
+
+input:hover::placeholder {
+    color: grey;
+
+}
+
+.inicie {
+    color: black;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hola {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.textoo {
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bx {
+    margin-left: 270px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.boton{
+    color:black;
+    cursor: pointer;
+    border-radius: 20px;
+   background-color: chartreuse;
+    margin-right:100px;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}

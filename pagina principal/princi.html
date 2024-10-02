@@ -35,23 +35,68 @@
       <a href="registro.html">
         <button class="registrar">Registrarse</button>
       </a>
-      <a href="registro.html">
-        <button class="">iniciar sesión</button>
+      <a href="iniciar.html">
+        <button class="registrar">iniciar sesión</button>
       </a>
     </div>
   </header>
-  <div class="texto_informativo">
-    <p class="TituloTexto">¡Bienvenidos a MQRG                                                                                                                                                                                                    
-  
-    </p> <br>
-    <p class="text"> El lugar donde encontrarás los coches de tus sueños! Somos una compañía establecida en España
-      en 1992 por cuatro amigos apasionados: un talentoso dibujante, un entusiasta del mundo del motor, un visionario
-      con gran imaginación y un conductor experto. Desde nuestros días universitarios, cuando recibimos nuestros
-      títulos, siempre hemos tenido el sueño de crear una empresa que ofrezca a nuestros clientes una experiencia
-      excepcional y cómoda, combinada con la mejor asistencia y calidad de vehículos del mercado a precios asequibles. <br></p>
-      <img src="../imagenes/presentacion.png" alt="Buggati corriendo por una carretera, como ejemplo de lo que ofrecemos" class="imagen">
+  <div class="informacion">
+    <div class="texto_informativo">
+      <p class="TituloTexto">¡Bienvenidos a MQRG
+
+      </p> <br>
+      <p class="text"> El lugar donde encontrarás los coches de tus sueños! Somos una compañía establecida en España
+        en 1992 por cuatro amigos apasionados: un talentoso dibujante, un entusiasta del mundo del motor, un visionario
+        con gran imaginación y un conductor experto. Desde nuestros días universitarios, cuando recibimos nuestros
+        títulos, siempre hemos tenido el sueño de crear una empresa que ofrezca a nuestros clientes una experiencia
+        excepcional y cómoda, combinada con la mejor asistencia y calidad de vehículos del mercado a precios asequibles.
+        <br>
+      </p>
+    </div>
+    <img src="../imagenes/presentacion.png" alt="Buggati corriendo por una carretera, como ejemplo de lo que ofrecemos"
+      class="imagen">
   </div>
-  
+  <div class="conteiner_data">
+    <div class="divcentro">
+      <!--carousel de imagenes-->
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="carousel-item">
+            <img src="IMAGENES/vortex/Vortex GT 2015.jpg">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <img src="../imagenes/presentacion.png"
+              class="imagenc"><!--informacion de la imagen, esta cambia segun la que estes-->
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <img src="IMAGENES/motor.jpg">
+          </div>
+          <!--controles del carrusel-->
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
