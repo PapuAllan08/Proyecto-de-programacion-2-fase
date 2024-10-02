@@ -1,0 +1,62 @@
+/*fondo y cosas asi*/
+body {
+    background-color: black;
+}
+
+/*el encabezado*/
+header {
+    padding: 10px;
+    display: flex;
+    background-color: gray;
+    color: white;
+    margin-top: -1%;
+    margin-left: -0.4%;
+    height: 70px;
+    justify-content: space-between;
+}
+
+/*titulo del encabezado*/
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin-left: 60px;
+
+}
+
+/*boton*/
+.registrar {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    border: 0px;
+    border-color: rgb(167, 167, 167);
+    background-color: rgb(167, 167, 167);
+    margin-left: 10px;
+    height: 40px;
+}
+
+/*pequeña animacion en los botones*/
+.registrar:hover {
+    transition: 0.3s;
+    background-color: black;
+    border-color: black;
+    color: aliceblue;
+}
+/*div del primer texto*/
+.texto_informativo {
+    width: 50%;
+}
+/*este se encarga de los estilos mde los textos dentro de la pagina*/
+.TituloTexto {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  large;
+
+}
+/*imagen en la presentacion*/
+.imagen {
+    width: 50%;
+}
