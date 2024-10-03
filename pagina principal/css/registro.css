@@ -4,14 +4,15 @@ body {
     background: linear-gradient(black, grey, black);
     background-repeat: no-repeat;
     height: 55vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .center {
     background-color: #fff;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.747);
     border: solid 2px white;
-    height: 450px;
-    width: 350px;
+    height: 500px;
+    width: 400px;
     display: flex;
     justify-content: center;
 
@@ -31,9 +32,13 @@ h2 {
 }
 
 input {
-    width: 250px;
+    width: 300px;
     border: none;
     border-bottom: solid 1px black;
+}
+
+input:focus{
+    outline: none;
 }
 
 input:hover {
@@ -66,20 +71,55 @@ input:hover::placeholder {
 .sec {
     display: flex;
     flex-direction: column;
-    margin-top: 3%;
+    margin-top: 3.5%;
     background-color: #fff;
     box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.747);
     border: solid 2px white;
-    height: 400px;
-    width: 300px;
+    height: 450px;
+    width: 305px;
+    border-left: solid rgba(0, 0, 0, 0.562);
+    border-right: solid rgba(0, 0, 0, 0.562);
+
 }
 
 
 .sec a{
     text-align: left;
-    margin-left: 7%;
+    padding: 10px;
+    margin: 7%;
+    border-right: solid black;
+    color: rgb(134, 51, 134);
 }
 .sec2{
     display: flex;
+    margin: auto;
 
+    
+}
+.sec p{
+    max-width: 250px;
+    margin: auto;
+}
+.img{
+    height: 240px;
+    box-shadow: 5px 0px 5px black;
+
+}
+.princi{
+    
+    text-decoration: none;
+    
+}
+.flex2{
+    display: flex;
+}
+.logo {
+    margin-left: 10%;
+    height: 50px;
+}
+
+.lolo {
+    filter: invert();
+    border-radius: 100%;
+    margin-top: 15px;
 }

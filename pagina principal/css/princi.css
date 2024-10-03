@@ -1,4 +1,4 @@
-/*fondo y cosas asi*/
+                                                                /*fondo y cosas asi*/
 body {
     background-color: black;
 }
@@ -13,6 +13,7 @@ header {
     margin-left: -0.4%;
     height: 70px;
     justify-content: space-between;
+    width: 100%;
 }
 
 /*titulo del encabezado*/
@@ -44,7 +45,7 @@ header {
 
 /*div del primer texto*/
 .texto_informativo {
-    width: 49%;
+    width: 55%;
     margin-right: 3%;
 }
 
@@ -56,7 +57,7 @@ header {
 
 .text {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+font-family: 'Courier New', Courier, monospace;
     font-size: large;
 
 }
@@ -76,7 +77,8 @@ header {
     border: 2px solid #ccc;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
-    width: 50%;
+    width: 90%;
+    margin-left: 3%;
 }
 
 .carousel-inner {
@@ -98,7 +100,7 @@ header {
 }
 
 .carousel-item img {
-    display: block;
+    display block;
     height: auto;
     max-width: 100%;
 }
@@ -125,13 +127,13 @@ header {
 
 .carousel-control.prev {
     left: 2%;
-    top: 27%;
+    top: 49%;
     bottom: 27%;
 }
 
 .carousel-control.next {
     right: 2%;
-    top: 27%;
+    top: 49%;
     bottom: 27%;
 }
 
@@ -180,6 +182,23 @@ header {
     color: #428bca;
 }
 
-.imagenc {
+.imagencarrousel {
     width: 100%;
+    max-height: 5000px;
+}
+
+/*un div para manener un poco la estetica minimalista*/
+.divespecial {
+    background-color: gray;
+    max-width: 100%;
+    padding: 20px;
+    margin-left: -1%;
+    display: flex;
+}
+.textocarousel {
+    margin-top: 17px;
+    max-width: 50%;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
 }

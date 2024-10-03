@@ -54,7 +54,7 @@ input:hover::placeholder {
 
 .inicie {
     color: black;
-    font-size: x-large;
+    font-size: large;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -68,18 +68,69 @@ input:hover::placeholder {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.bx {
-    margin-left: 270px;
-    font-size: 25px;
+.bx{
     cursor: pointer;
+    margin-left: 260px;
+    
 }
 
-.boton{
-    color:black;
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
     cursor: pointer;
-    border-radius: 20px;
-   background-color: chartreuse;
-    margin-right:100px;
-    font-size: larger;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: rgb(238, 237, 237);
+    margin-right: 100px;
     font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  .btn::after {
+    background-color: #fff;
+  }
+  
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  
+  .a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+ font-size: medium;
+ font-family: 'Courier New', Courier, monospace;
 }
+
+
+  
