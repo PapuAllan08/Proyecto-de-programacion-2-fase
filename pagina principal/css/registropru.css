@@ -1,0 +1,99 @@
+body{
+    background-image: url(/imagenes/FERRA.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;   
+    height: 100%;
+}
+.colum{
+    margin: -10px;
+    margin-left: 74%;
+    text-align: center;
+    width: 500px;
+    padding-right: 20%;
+    height: 100%;
+    padding-bottom: 100px;
+    background: linear-gradient(to left,black, rgb(0, 0, 0),rgb(0, 0, 0),rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.33), transparent);
+}
+.gradiente{
+    background: linear-gradient(to left,black, rgba(0, 0, 0, 0.938),rgba(0, 0, 0, 0.708), transparent, transparent, transparent);
+    padding-bottom: 100px;
+    padding-right: 100px;
+    
+}
+.colum h1{
+    color: white;
+    padding-top: 5%;
+}
+
+input {
+    transform: scale(1.2);
+    width: 95%;
+    border: none;
+    border-bottom: solid 1px black;
+    margin-top: 10%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:hover {
+    border: none;
+    border-bottom: solid 1px white;
+    border-radius: none;
+    transition: 0.1s;
+}
+
+input::placeholder {
+    text-align: start;
+    color: white;   
+}
+
+input:hover::placeholder {
+    transform: scale(1,1.1);
+}
+
+a {
+    color: rgb(101, 190, 219);
+    text-decoration: none;
+    transform: scale(1.5,1.5);
+}
+
+.content{
+    display: flex;
+    flex-direction: column; 
+    border: none;
+    padding-bottom: 290px;
+    height: 100%;
+    background: linear-gradient(to left,black,rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.158),transparent);
+}
+
+
+button{
+    margin: 7%;
+    border: none;
+    border-radius: 100px;
+    height: 30px;
+    width: 90%;
+    cursor: pointer;
+    margin-top: 20%;
+}
+
+button:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.1s;
+}
+
+.sec{
+
+    color: white;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+.sec a{
+    margin-top: 4%;
+}
+
