@@ -89,7 +89,7 @@ body {
   }
   
   .btn_pagina1:hover:after {
-    border-color: #1100ff;
+    border-color: rgb(255, 255, 255);
     height: 100%;
     transform: translateX(0);
     transition: 0.3s transform linear, 0.3s height linear 0.5s;
@@ -244,7 +244,7 @@ body {
   .reseñatituloprinci {
     margin-top: 110px;
     font-size: 24px;
-    margin-left:30px;
+    margin-left:50px;
     margin-bottom: 20px;
   }
   

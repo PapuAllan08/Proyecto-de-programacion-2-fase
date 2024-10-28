@@ -7,7 +7,6 @@ body{
 .colum{
     margin: -10px;
     margin-left: 74%;
-    text-align: center;
     width: 500px;
     padding-right: 20%;
     height: 100%;
@@ -21,19 +20,21 @@ body{
     
 }
 .colum h1{
+    margin-left: 20%;
     color: white;
-    padding-top: 5%;
+    text-shadow: 1px 1px 6px white;
 }
 
 input {
     transform: scale(1.2);
-    width: 95%;
-    border: none;
-    border-bottom: solid 1px black;
+    width: 70%;
+    border: solid 1px white;
     margin-top: 10%;
     height: 40px;
     background-color: transparent;
     color: white;
+    border-radius: 10px;
+    transition: 1s;
 }
 
 input:focus{
@@ -41,28 +42,32 @@ input:focus{
 }
 
 input:hover {
-    border: none;
+    border: 0x;
     border-bottom: solid 1px white;
-    border-radius: none;
     transition: 0.1s;
+    border-radius: 0px;
+   
 }
 
 input::placeholder {
-    text-align: start;
-    color: white;   
+    text-align: left;
+    color: rgba(238, 255, 255, 0.781) ;
 }
 
 input:hover::placeholder {
     transform: scale(1,1.1);
+    color: white;
+    
 }
 
 a {
     color: rgb(101, 190, 219);
     text-decoration: none;
     transform: scale(1.5,1.5);
+    text-align: left;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column; 
     border: none;
@@ -73,27 +78,41 @@ a {
 
 
 button{
-    margin: 7%;
-    border: none;
+    color: white;
+    margin-top: 3%;
     border-radius: 100px;
-    height: 30px;
-    width: 90%;
+    height: 50px;
+    width: 80%;
     cursor: pointer;
-    margin-top: 20%;
+    border: solid white;
+    background-color: rgb(0, 0, 0);
+    transition: 0.1s;
+    margin-left: -4%;
+
 }
 
 button:hover{
     transform: scale(1.1,1.1);
-    transition: 0.1s;
+    font-size: 20px;
+    border: solid black;
+    background-color: white;
+    color: black;
+}
+.pri {
+    margin-top: 10%;
 }
 
-.sec{
+.LOG0 {
+    position: absolute;
+    display: flex;
+}
 
+.IMMG {
+    width: 200px;
+    height: 200px;
+}
+
+.TP {
     color: white;
-    justify-content: space-between;
-    margin-top: 15%;
+    font-size: 60px;
 }
-.sec a{
-    margin-top: 4%;
-}
-
