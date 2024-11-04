@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0%;
 }
 
 header {
@@ -112,6 +113,7 @@ input {
 }
 
 .filas {
+    height: 170px;
     justify-content: space-between;
     display: flex;
 }
@@ -138,3 +140,38 @@ input {
     margin-top: 50px;
 }
 
+/* Footer */
+footer {
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    margin-top: 70px;
+    color: white;
+}
+
+footer p {
+    transition: 0.5s;
+}
+
+footer p:hover {
+    translate: 0px -5px;
+}
+
+.didi {
+    filter: invert();
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+footer img {
+    width: 30px;
+    transition: 0.5s;
+}
+
+footer img:hover {
+    translate: 0px -5px;
+}

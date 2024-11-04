@@ -1,6 +1,8 @@
                                                                 /*fondo y cosas asi*/
 body {
     background-color: rgb(255, 255, 255);
+    margin-bottom: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -253,4 +255,40 @@ input {
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
     color: #000000;
+}
+
+/* Footer */
+footer {
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    margin-top: 70px;
+    color: white;
+}
+
+footer p {
+    transition: 0.5s;
+}
+
+footer p:hover {
+    translate: 0px -5px;
+}
+
+.didi {
+    filter: invert();
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+footer img {
+    width: 30px;
+    transition: 0.5s;
+}
+
+footer img:hover {
+    translate: 0px -5px;
 }
