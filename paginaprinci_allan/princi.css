@@ -231,8 +231,11 @@ body {
     max-width: 100%;
     margin: 20px;
     justify-content: space-around;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
     flex-direction: row;
+
   }
   
   .reseñatituloprinci {
@@ -245,6 +248,7 @@ body {
   .reseña_cuadro {
     background-color: #fff;
     border-radius: 8px;
+    border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px;
@@ -272,6 +276,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    
   }
   
   .cliente img {
