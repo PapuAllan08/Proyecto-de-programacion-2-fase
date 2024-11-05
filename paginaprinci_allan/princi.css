@@ -5,7 +5,7 @@ body {
     background-image: url(..//IMAGENES/fondo_nuevo.jpg);
     font-family: Arial, Helvetica, sans-serif;
     color:black;
-    background-color: white;
+    background-color: rgba(207, 204, 204, 0.644);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -164,7 +164,8 @@ body {
   
   
   .caja_info > img {
-      margin-left:40px;
+    margin-top: 70px;
+      margin-left:20px;
       border-radius:5%;
   }
   
@@ -177,21 +178,16 @@ body {
   }
   
   .precio{
-      background-size: auto;
-      border:1px solid yellowgreen;
+  background-color: rgb(50, 187, 50);
+  margin-right: 370px;
   }
   
-  .precioo{
-      color:black;
-      font-size: 40px;
-      margin-top:5px;
-  }
-  
+
   
   .masinfo {
       background-color: black;
       margin:10px;
-      margin-left:100px;
+    
       padding:10px;
       flex-direction: row;
       width:400px;
@@ -207,9 +203,6 @@ body {
   }
   
   .pequeñainfo {
-    box-shadow:2px 2px 10px #000;
-    position: absolute;
-    margin-right:10px;
     margin-top:10px;
     font-size: large;
   }
@@ -227,7 +220,8 @@ body {
   
   .dos {
     position:relative;
-    right:70%;
+    right:80%;
+
   }
   
   /*cartas de las reseñas xdd*/
@@ -237,20 +231,24 @@ body {
     max-width: 100%;
     margin: 20px;
     justify-content: space-around;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
     flex-direction: row;
+
   }
   
   .reseñatituloprinci {
     margin-top: 110px;
     font-size: 24px;
-    margin-left:50px;
+    margin-left:560px;
     margin-bottom: 20px;
   }
   
   .reseña_cuadro {
     background-color: #fff;
     border-radius: 8px;
+    border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px;
@@ -278,6 +276,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    
   }
   
   .cliente img {
@@ -297,25 +296,13 @@ body {
     color: #999;
   }
   
-  /*ver mas reseñas*/
-  .mas_reseñas {
-    margin-top:100px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .vermas {
-    display:inline;
-    color:black;
-    border:1px solid black;
-  }
+
   
   .mesage {
+    margin-top: 30px;
     font-weight: 100;
     color:gray;
-    margin-top:5px ;
+   text-align: center;
   }
   
   
@@ -349,10 +336,24 @@ body {
     background-color: #555;
   }
   
-  .xd {
-    text-decoration: none;
-  }
-  
+ 
+/*reseñas*/
+  .cargar_mas {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(208, 255, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 560px;
+}
+
+.cargar_mas:hover {
+    background-color: #555;
+}
+
   /*footererr*/
     
   footer {
