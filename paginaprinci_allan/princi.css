@@ -291,26 +291,13 @@ body {
     color: #999;
   }
   
-  /*ver mas reseñas*/
-  .mas_reseñas {
-    margin-top:100px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .vermas {
-    display:inline;
-    color:black;
-    border:1px solid black;
-  }
+
   
   .mesage {
     margin-top: 30px;
     font-weight: 100;
     color:gray;
-
+   text-align: center;
   }
   
   
@@ -344,10 +331,24 @@ body {
     background-color: #555;
   }
   
-  .xd {
-    text-decoration: none;
-  }
-  
+ 
+/*reseñas*/
+  .cargar_mas {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(208, 255, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 560px;
+}
+
+.cargar_mas:hover {
+    background-color: #555;
+}
+
   /*footererr*/
     
   footer {
