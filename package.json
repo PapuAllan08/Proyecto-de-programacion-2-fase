@@ -2,8 +2,7 @@
   "name": "proyecto-de-programacion-2-fase-2",
   "version": "1.0.0",
   "description": "Este proyecto está diseñado para aprender y practicar cosas aprendidas en desarrollo web, el proyecto cuenta con 3 fases:",
-  "type": "module",
-  "main": "..//Proyecto-de-programacion-2-fase-2//pagina principal//princi.html",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node"
   },
