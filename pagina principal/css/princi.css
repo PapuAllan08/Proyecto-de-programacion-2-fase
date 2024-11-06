@@ -105,6 +105,7 @@ input {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    text-align: center;
 }
 
 .text {
@@ -252,8 +253,8 @@ input {
 .textocarousel {
     margin-top: 17px;
     max-width: 50%;
-    font-size: large;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-family:'Courier New', Courier, monospace;
     color: #000000;
 }
 
@@ -291,4 +292,110 @@ footer img {
 
 footer img:hover {
     translate: 0px -5px;
+}
+
+/*cartas de las reseñas xdd*/
+  
+.reseñas {
+    text-align: center;
+    max-width: 100%;
+    margin: 20px;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    flex-direction: row;
+
+  }
+  
+  .reseñatituloprinci {
+    margin-top: 110px;
+    font-size: 24px;
+    margin-left:560px;
+    margin-bottom: 20px;
+  }
+  
+  .reseña_cuadro {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 250px;
+  }
+  
+  .estrellas {
+    color: #FFD700;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .reseña_cuadro h3 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .reseña_cuadro p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .cliente {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  
+  .cliente img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .cliente span {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .fecha {
+    margin-left: auto;
+    color: #999;
+  }
+  
+  .cargar_mas {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(208, 255, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 560px;
+}
+
+.cargar_mas:hover {
+     color: darkslategray;
+    
+}
+
+
+.cata{
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(208, 255, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    margin-left: 550px;
+}
+
+.cata:hover{
+    color: darkslategray;
 }
