@@ -1,0 +1,27 @@
+{
+  "name": "proyecto-de-programacion-2-fase-2",
+  "version": "1.0.0",
+  "description": "Este proyecto está diseñado para aprender y practicar cosas aprendidas en desarrollo web, el proyecto cuenta con 3 fases:",
+  "type": "module",
+  "main": "..//Proyecto-de-programacion-2-fase-2//pagina principal//princi.html",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0",
+    "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/node": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "nodemon": "^3.1.7"
+  }
+}
