@@ -27,22 +27,19 @@
 <body>
   <div class="LOG0"><img src="../imagenes/logo mc.png" alt="Logo" class="IMMG"> <p class="TP">MQRG</p></div>
   <div class="gradiente">
- <div class="colum">
-  <div class="content">
+ <div class="colum" >
+  <form class="content" id="registrodiv">
     <h1>Registrate</h1>
-  
-    <input type="text" placeholder="Nombre de Usuario">
-    <input type="password" placeholder="Contraseña">
-    <input type="email" placeholder="Email">
-    <button class="pri">Iniciar Sesión</button>
+    <input type="text" placeholder="Nombre de Usuario" id="nombreusuario" required>
+    <input type="password" placeholder="Contraseña" id="contraseña" required>
+    <input type="email" placeholder="Email" id="email" required>
+    <input type="submit" value="Registrarme" id="submit" onclick="registrarCliente()">
     <button href="">Olvidé mi contraseña?</button>
     <button href="">Ya tengo una cuenta?</button>
-  </div>
+    
+  </form>
  </div>
 </div>
-</body>
-
-<script src="js/inicie.js"></script>
 <script src="js/regi.js"></script>
-
+</body>
 </html>

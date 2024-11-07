@@ -1,8 +1,8 @@
-import {config} from 'dotenv'
+import {config} from "dotenv"
 config();
 
-console.log(process.env.APELLIDO)
+console.log(process.env.PORT)
 
 export default {
-    port: 4000
+    port: process.env.PORT || 3000
 }
