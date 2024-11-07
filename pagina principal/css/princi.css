@@ -272,6 +272,7 @@ footer {
 
 footer p {
     transition: 0.5s;
+    
 }
 
 footer p:hover {
@@ -404,3 +405,4 @@ footer img:hover {
 .comentarios{
     
 }   
+

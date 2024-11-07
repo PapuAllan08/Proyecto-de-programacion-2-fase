@@ -1,3 +1,4 @@
+document.body.style.overflow = 'hidden';
 let clientes = []
 
   function registrarCliente() {
@@ -8,10 +9,6 @@ let clientes = []
     if (nombreusuario === "" || contraseña === "" || email === "") {
       alert("Por favor, complete la información solicitada");
     } else {
-        let ClienteExis = clientes.some(clientes => clientes.nombreusuario === nombreusuario || clientes.email === email);
-        if (ClienteExis) {
-            alert("El nombre de usuario ya está registrado. Por favor, elija otro.");
-          } else {
       alert("Completado")
       clientes.push({
         nombreusuario: nombreusuario,
@@ -21,8 +18,12 @@ let clientes = []
 
       
     }
+    catch (error) {
+      console.error("Ocurrió un error en el proceso de registro:", error.message);
+      alert("Hubo un problema al registrar el cliente. Por favor, intenta más tarde.");
+  }
     }
-    }
+    
     
 
 

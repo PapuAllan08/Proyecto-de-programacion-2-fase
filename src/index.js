@@ -1,6 +1,4 @@
-import app from "./app"
-import "./Database/connection"
+import app from './app.js'
 
-app.listen(app.get('port'))
-
-console.log('server on port', app.get('port'))
+app.listen(3000)
+console.log("servidor iniciado")
