@@ -1,0 +1,248 @@
+/*estilos de la pagina de el about us "sobre nosotros"*/
+body {
+    background-color: black;
+}
+  
+  /*codigo del encabezado principal*/
+  header {
+    padding: 0%;
+    margin: 0%;
+    background-color: #080d11;
+    border: 2px solid black;
+    box-shadow: 0 0 35px 0 rgb(255, 255, 255);
+    font-size: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 255, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+  }
+  
+  /*codigo del ancho del logo que se encuentra en el encabezado principal*/
+  .Logo {
+    width: 100px;
+  }
+  
+  /*este codigo es basicamente todo lo relacionado a los botones de inicio de sesion y registro*/
+  .btn_pagina1 {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: 0.5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .btn_pagina1:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .btn_pagina1:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .btn_pagina1:hover {
+    box-shadow: 0 5px 15px rgba(253, 253, 253, 0.5);
+  }
+  
+  .btn_pagina1:hover:before {
+    border-color: #ffffff;
+    height: 100%;
+    transform: translateX(0);
+    transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  }
+  
+  .btn_pagina1:hover:after {
+    border-color: #1100ff;
+    height: 100%;
+    transform: translateX(0);
+    transition: 0.3s transform linear, 0.3s height linear 0.5s;
+  }
+  
+  button {
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  
+  button {
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  
+  /*ponerle la direccion a los botones del inicio y registro de sesion*/
+  
+  
+  .inicio_y_registro {
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+  
+  /*tarjetas de presentacion de los integrantes del equipo*/
+  .Aboutus {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 35px rgba(169, 169, 208, 0.278);
+    text-align: left;
+    height: auto;
+    font-size: larger;
+    background-color: rgba(41, 41, 41, 0.938);
+    max-width: 1470px;
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cardContainer {
+    margin: 2%;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  /*tamaño de las imagenes*/
+  .allan {
+    width: 200px;
+    height: 250px;
+  }
+  
+  .profileDiv {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+    transition-duration: 0.5s;
+    color: rgb(155, 155, 155);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .cardContainer:hover .profileDiv {
+    transform: translateX(-25%) translateY(-20%);
+    transition-duration: 0.5s;
+  }
+  
+  .infoDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    z-index: 1;
+  }
+  
+  .nameDiv {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: aliceblue;
+    font-family: Helvetica, Arial, sans-serif;
+    gap: 2px;
+  }
+  
+  .name {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .role {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+    margin-bottom: 5px;
+  }
+  
+  .socialDiv {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(14, 14, 14);
+    gap: 25px;
+  }
+  
+  .infoDiv a {
+    width: 50%;
+  }
+  
+  .socials {
+    width: 100%;
+    fill: rgb(14, 14, 14);
+  }
+  
+  /*estilo para la informacion que se le brinda alos clientes o personas que visiten la pagina web*/
+  .texto {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /*DIV DONDE ESTAN LAS IMAGAENES*/
+  .Cuadro {
+    display: flex;
+    box-shadow: 0 0 35px rgba(169, 169, 208, 0.278);
+    text-align: left;
+    height: auto;
+    font-size: larger;
+    background-color: rgba(41, 41, 41, 0.938);
+    max-width: 1100px;
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }

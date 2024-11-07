@@ -1,0 +1,54 @@
+/*estilos para todos los elementos que se encuentran dentro del body*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url(..//IMAGENES/fondiu_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*Estilo del contenido*/
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+/*Estilos del encabezado*/
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+/*Estilos de los "h y p"*/
+h1 {
+    color: #333;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ff4081;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+/*Estilos de secciones y botones*/
+section:nth-child(odd) {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(even) {
+    background-color: NAVY;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
