@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="css/Comentarios.css">
+</head>
+<body>
+
+    <div class="consultas">
+    <h2>Envianos tu consulta</h2>
+    <form id="consulta-formu">
+
+    <label for="nombre">Mi Nombre es:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Mi correo electrónico es:</label>
+    <input type="email" id="correo" name="correo">
+
+    <label for="mensaje">Escribenos tu consulta, pregunta o comentario:</label>
+    <textarea name="mensaje" id="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+    </form>
+
+    <h3>Consultas recientes</h3>
+    <div id="consulta"></div>
+</div>
+
+<script src="js/consultas.js"></script>
+</body>
+</html>
