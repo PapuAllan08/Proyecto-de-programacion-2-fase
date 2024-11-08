@@ -10,7 +10,7 @@ body{
     background-size: 100%;
 
 }
-
+/* estilos de un div */
 .consulta-container{
     width: 100%;
     max-width: 500px;
@@ -30,7 +30,7 @@ body{
         opacity: 1;
     }
 }
-
+/* estilos de algunos titulos */
 h2, h3{
     color: #e6e6e6;
     text-align: center;
@@ -61,7 +61,7 @@ input:focus, textarea:focus{
     box-shadow: 0 0 8px #4CAF50, 0 0 12px #4caf50;
     outline: none;
 }
-
+/* estiilos de los botones */
 button {
     width: 100%;
     padding: 12px;
@@ -85,7 +85,7 @@ button:hover{
     transform: translateY(-3px);
     box-shadow: 0 0 20px #4CAF50, 0 0 40px #4CAF50;
 }
-
+/* consultas */
 .consulta{
     background-color: #2c2c2c;
     padding: 15px;
@@ -106,7 +106,7 @@ button:hover{
     }
 }
 
-
+/* texto dentro de la consulta */
 .consulta h4{
     margin: 0;
     color: #4CAF50;

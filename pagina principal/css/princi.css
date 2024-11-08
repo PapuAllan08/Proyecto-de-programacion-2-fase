@@ -1,19 +1,19 @@
                                                                 /*fondo y cosas asi*/
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #faecec9f;
     margin-bottom: 0%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header {
-    padding: 10px;
     display: flex;
     height: 100px;
     justify-content: space-between;
     width: 100%;
     margin: -1%;
-    padding: 0.7%;
-
+    padding: 1%;
+    padding-bottom: 2%;
+    background-color: white;
 }
 
 
@@ -31,7 +31,7 @@ input::placeholder{
 
 /* Linea estetica */
 .linea {
-    margin-top: 3%;
+    margin-top: 1%;
     background-color: black;
     width: 100%;
     height: 5px;
@@ -104,6 +104,7 @@ input {
     margin-top: 2%;
     border-radius: 30px;
     margin-bottom: 3%;
+    background-color: rgb(255, 255, 255);
 }
 
 /*este se encarga de los estilos mde los textos dentro de la pagina*/
@@ -111,11 +112,12 @@ input {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: uppercase;
     color: black;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(216, 43, 43, 0.315);
     padding: 10px;
     width: 30%;  
     margin-left: 35%;
     border-radius: 20px 5px;
+    margin-top: 5%;
 
 }
    
@@ -125,8 +127,8 @@ input {
     color: black;
     margin-left: 3%;
     padding: 30px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
-    background-color: rgba(157, 157, 248, 0.205);    
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.164);
+    background-color: #ebc2c29f;   
 }
 
 /*imagen en la presentacion*/
@@ -265,7 +267,7 @@ input {
     border-radius: 30px;
 }
 .textocarousel {
-    margin-top: 1%;
+    margin-top: 2%;
     max-width: 50%;
     font-size: 110%;
     padding: 10px;
@@ -273,10 +275,10 @@ input {
     color: #000000;
     margin-bottom: 2%;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
-    background-color: rgba(157, 157, 248, 0.205);
+    background-color: #ebc2c29f;   
 }
 
-
+/* FOOTER */
 footer{
     padding-top:60px ;
     background-color: #000000;
@@ -324,7 +326,7 @@ footer img:hover {
   .reseñatituloprinci {
     margin-top: 110px;
     font-size: 24px;
-    margin-left:560px;
+    text-align: center;
     margin-bottom: 20px;
   }
   
@@ -378,7 +380,7 @@ footer img:hover {
     margin-left: auto;
     color: #999;
   }
-  
+  /* BOTONES DE LAS RESEñAS */
   .cargar_mas {
     margin-top: 20px;
     padding: 10px 20px;
@@ -388,7 +390,7 @@ footer img:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 560px;
+    margin-left: 44%;
 }
 
 .cargar_mas:hover {
@@ -413,7 +415,7 @@ footer img:hover {
     color: darkslategray;
 }
 
-
+/* texto en el footer */
 .comentarios{
 
     color: white;
@@ -442,12 +444,12 @@ footer img:hover {
 .estop:hover{
     transform: scale(1.2);
 }
-
+/* vara para que los links no tengan el color morado ese raro y que no se subrayen */
 a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* vara del pop up */
 .popup {
     display: none; /* Oculto por defecto */
     position: fixed;

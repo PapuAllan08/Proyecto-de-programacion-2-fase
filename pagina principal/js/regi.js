@@ -1,6 +1,8 @@
+//hace que la pagina no se pueda ni bajar ni subir
 document.body.style.overflow = "hidden";
 let clientes = [];
 
+//Modulo de Clientes 
 function registrarCliente() {
   try {
     let nombreusuario = document.getElementById("nombreusuario").value;
@@ -31,3 +33,6 @@ function registrarCliente() {
 function redirección (){
   window.location.href ="/pagina principal/iniciar.html"
 }
+
+// profe aca fue cuando creimos que teniamos que hacer un modulo de clientes
+// pero bueno por lo menos esta el try catch

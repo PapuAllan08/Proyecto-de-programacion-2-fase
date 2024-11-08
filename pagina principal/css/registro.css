@@ -7,30 +7,20 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.center {
-    background-color: #fff;
-    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.747);
-    border: solid 2px white;
-    height: 500px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-
-}
-
+/* contenedor de otras cosas */
 .contenedor {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
 }
-
+/* algun que otro titulo */
 h2 {
     font-size: 35px;
     text-align: center;
     flex-direction: initial;
 }
-
+/* inputs donde se pone la info */
 input {
     width: 300px;
     border: none;
@@ -56,7 +46,7 @@ input:hover::placeholder {
     color: grey;
 
 }
-
+/* links de href */
 .a {
     color: rgb(101, 190, 219);
     text-decoration: none;

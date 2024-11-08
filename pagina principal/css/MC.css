@@ -1,0 +1,244 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/*Cabeza de la pagina*/
+header {
+    padding: 10px;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    width: 100%;
+    margin: -1%;
+    padding: 0.7%;
+
+}
+
+
+input::placeholder{
+    text-align: center;
+}
+/*Logo de la pagina*/
+.logo {
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 20px;
+    filter: invert();
+
+}
+
+/* Linea estetica */
+.linea {
+    margin-top: 3%;
+    background-color: black;
+    width: 100%;
+    height: 5px;
+
+}
+/*botones de la pagina*/
+.botones {
+    display: grid;
+}
+
+/*Botones de registro e inicio de sesión*/
+.registrar {
+    border-radius: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0px;
+    border: 0px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    height: 40px;
+    width: 140px;
+    font-size: 18px;
+    margin-top: 10%;
+}
+
+/*pequeña animacion en los botones*/
+.registrar:hover {
+    transition: 0.3s;
+    background-color: black;
+    border-color: black;
+    color: aliceblue;
+}
+
+/*titulo*/
+.titu {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 50px;
+
+}
+
+.Titulo {
+    font-size: 50px;    
+}
+.IMT {
+    display: flex;
+}
+
+
+/*futer de la pagina*/
+footer{
+    padding-top:60px ;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+    
+
+footer p:hover {
+    translate: 0px -5px;
+}
+
+.didi {
+    filter: invert();
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 30px;
+    transition: 0.5s;
+}
+
+footer img:hover {
+    translate: 0px -5px;
+}
+
+.comentarios{
+
+    color: white;
+}
+
+.terminos{
+    color: white;
+}
+
+.ayuda{
+    color: white;
+}
+
+.nosotros{
+    color: white;
+}
+
+/* estilos para que los links no se distorcionen */
+a {
+    text-decoration: none;
+    color: white;
+}
+/* pop up */
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+.popconten{
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    color: black;
+}
+/* para cerrar el pop up */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.estop{
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/*Imagen del carro*/
+
+.imagen{
+    height: 410px;
+    margin: 1%;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+
+/*informacion del carro*/
+.informacion{   
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(235, 235, 220);
+}   
+
+/*Mas informacion del carro*/
+.text{
+    max-width: 500px;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.514);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+/*nombre del carro*/
+.TituloTexto{
+    text-align: center;
+    margin-top: 6%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.514);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.flex{
+    display: flex;
+}
+
+.column span{
+    margin: 2%;
+}
+
+.boton{
+    margin-top: 13%;
+    margin-left: 10%;
+}
+
+.botondiseño{
+    background-color: #000000d2;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    border: solid 2px black;
+    box-shadow: 1px 1px 5px black;
+}
+
+.botondiseño:hover{
+    transform: scale(1.1);
+}

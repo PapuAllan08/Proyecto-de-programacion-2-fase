@@ -1,5 +1,6 @@
+document.body.style.overflow = "hidden";
 document.addEventListener('DOMContentLoaded', () => {
-    const consultaForm = document.getElementById('consulta-formu');
+    const consultaForm = document.getElementById('consultita');
     const consultaLista = document.getElementById ('consulta')
     const errorlabel = document.createElement('p');
     errorlabel.classList.add('error')

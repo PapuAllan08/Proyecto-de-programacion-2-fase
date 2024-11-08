@@ -1,6 +1,8 @@
+//hace que la pagina no se pueda ni bajar ni subir
 document.body.style.overflow = 'hidden';
 let clientes = [];
 
+//Modulo de registrar
 function registrarCliente() {
   try {
     let nombreusuario = document.getElementById("nombreusuario").value

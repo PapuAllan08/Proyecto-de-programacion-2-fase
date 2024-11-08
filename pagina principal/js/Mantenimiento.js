@@ -1,4 +1,4 @@
-// Selección de elementos
+// aca agarra los elementos
 const form = document.getElementById("producto-form");
 const modeloInput = document.getElementById("modelo");
 const marcaInput = document.getElementById("marca");
@@ -6,7 +6,7 @@ const descripcionInput = document.getElementById("descripcion");
 const precioInput = document.getElementById("precio");
 const indexInput = document.getElementById("index");
 const listaProductos = document.getElementById("producto-lista");
-
+// crea el evento
 document.addEventListener("DOMContentLoaded", cargarProductos);
 
 form.addEventListener("submit", function(event) {
@@ -27,6 +27,7 @@ form.addEventListener("submit", function(event) {
     indexInput.value = ""
     cargarProductos();
 });
+// agrega los productos
 function agregarProducto(producto) {
     const productos = JSON.parse(localStorage.getItem("productos")) || [];
     productos.push(producto)
@@ -52,7 +53,7 @@ function cargarProductos() {
         listaProductos.appendChild(fila);
     });
 }
-// edita las caracteristicas
+// edita la info
 function editarProducto(index) {
     const productos = JSON.parse(localStorage.getItem("productos"));
     const producto = productos[index];
@@ -62,14 +63,14 @@ function editarProducto(index) {
     precioInput.value = producto.precio
     indexInput.value = index;
 }
-// aca los actualiza
+// aca actualiza la info
 
 function actualizarProducto(index, nuevoProducto) {
     const productos = JSON.parse(localStorage.getItem("productos"));
     productos[index] = nuevoProducto;
     localStorage.setItem("productos", JSON.stringify(productos))
 }
-
+// funcion para eliminar productos
 function eliminarProducto(index) {
     const productos = JSON.parse(localStorage.getItem("productos"));
     productos.splice(index, 1)

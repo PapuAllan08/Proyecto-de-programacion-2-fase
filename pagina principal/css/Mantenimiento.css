@@ -3,17 +3,17 @@ body {
     text-align: center;
     margin-bottom: 0px;
 }
-
+/* div donde estan los inputs para ingresar la informacion */
 .formulario {
     margin-bottom: 20px;
 }
-
+/* estilos de la tablka */
 .tabla {
     width: 100%;
     border-collapse: collapse;
     
 }
-
+/* estilos mas especializados de las tablas y dentro de estas */
 .tabla, .encabezado, .celda {
     border: 1px solid #2b2b2b;
 }
@@ -22,7 +22,7 @@ body {
     padding: 8px;
     text-align: center;
 }
-
+/* boton de agregar los datos */
 .boton {
     margin-top: 10px;
     padding: 8px 12px;
@@ -36,12 +36,12 @@ body {
 .boton:hover {
     background-color: #000000;
 }
-
+/* estos botones se ponen desde el javascript */
 .butoto {
     border-radius: 10px;
     border-color: black; 
 }
-
+/* clase que va a tener cada elemento en la tabla */
 .producto {
     margin-bottom: 10px;
     display: flex;
