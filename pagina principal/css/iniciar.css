@@ -3,32 +3,33 @@ body {
     background-repeat: no-repeat;
     background-size: 100%
 }
-
+/* titulos */
 h1{
     text-align: center;
     color: white;
     text-shadow: 1px 1px 6px white;
 }
-
+/* div paraun contenedor de otros tipos de etiquetas */
 .contenedor{
     padding-top: 10%;
     display: flex;
     flex-direction: column;
 }
-
+/* estilos del logo */
 .LOG0 {
     position: absolute;
     display: flex;
     margin-left: 74%;
-    margin-top: -38%;
-}
+    margin-top: -35%;
 
+}
+/* estilos de la imagon en si */
 .IMMG {
     width: 200px;
     height: 200px;
     filter: invert();
 }
-
+/* texto de MQRG */
 .TP {
     color: black;
     font-size: 60px;
@@ -40,6 +41,8 @@ h1{
     padding-bottom: 60%;
     padding-right: 60%;
 }
+
+/*Para mantener el estilo de los inputs*/
 input {
     margin-left: 15%;
     transform: scale(1.2);
@@ -75,6 +78,8 @@ input:hover::placeholder {
     color: white;
     
 }
+
+/* Estilos de los botones */
 button{
     color: #ffffff;
     margin-top: 5%;
@@ -88,7 +93,7 @@ button{
     margin-left: 10%;
 
 }
-
+/* una pequeña animacion de los botones */
 button:hover{
     transform: scale(1.1,1.1);
     font-size: 20px;

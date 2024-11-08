@@ -15,6 +15,7 @@ document.getElementById("loadMoreBtn").addEventListener("click", function() {
 
     reviews.forEach(review => {
 
+        //crea los espacios para añadir las reseñas
         const reviewCard = document.createElement("div");
         reviewCard.className = "reseña_cuadro";
 
@@ -42,4 +43,8 @@ function mostrar(){//abre pop up
 
 function cerrar(){//ciierra popup
     document.getElementById("pop").style.display ="none"
+}
+
+function face(){
+    window.location.href = "https://www.facebook.com/share/6tUYUe3sunSanht3/?mibextid=qi2Omg";
 }
