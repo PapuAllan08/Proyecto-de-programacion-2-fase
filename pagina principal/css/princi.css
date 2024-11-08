@@ -2,7 +2,7 @@
 body {
     background-color: rgb(255, 255, 255);
     margin-bottom: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header {
@@ -52,8 +52,7 @@ input {
 }
 
 .Titulo {
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;    
 }
 .IMT {
     display: flex;
@@ -66,7 +65,7 @@ input {
 
 .registrar {
     border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 0px;
     border: 0px;
     border-color: rgb(255, 255, 255);
@@ -88,8 +87,10 @@ input {
 
 /*div del primer texto*/
 .texto_informativo {
-    width: 55%;
+    max-width: 55%;
     margin-right: 3%;
+    text-align: center;
+    
 
 }
 
@@ -102,17 +103,25 @@ input {
 
 /*este se encarga de los estilos mde los textos dentro de la pagina*/
 .TituloTexto {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
     color: black;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.315);
+    text-shadow: 2px 2px 2px white;
+    padding: 10px;
+    width: 30%;  
+    margin-left: 35%;
+    border-radius: 20px 5px;
 }
 
 .text {
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+    font-size: 120%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
+    margin-left: 3%;
+    padding: 30px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
+    background-color: rgba(157, 157, 248, 0.205);    
 }
 
 /*imagen en la presentacion*/
@@ -251,12 +260,16 @@ input {
     border-radius: 30px;
 }
 .textocarousel {
-    margin-top: 17px;
+    margin-top: 1%;
     max-width: 50%;
-    font-size: medium;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 110%;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #000000;
-}
+    margin-bottom: 2%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
+    background-color: rgba(157, 157, 248, 0.205);  
+    }
 
 /* Footer */
 footer {
@@ -420,5 +433,5 @@ footer img:hover {
 }
 
     
-}   
+
 
