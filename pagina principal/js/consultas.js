@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const consultaForm = document.getElementById('consulta-formu');
-    const consultaLista = document.getElementById('consulta');
+    const consultaLista = document.getElementById ('consulta');
     const errorlabel = document.createElement('p');
     errorlabel.classList.add('error');
-    errorlabel.textContent = 'Completa todos los datos correctamente';
+    errorlabel.textContent = 'completa el formualrio correctamente';
     consultaForm.appendChild(errorlabel);
 
-    // Cargar las consultas almacenadas en LocalStorage al cargar la página
+
+    //este carga las consultas almacenadas al localstorage
     cargarConsultas();
 
-    consultaForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-        
+    consultaForm.addEventListener("submit", function(event){
+    event.preventDefault();           
         const nombre = document.getElementById('nombre').value.trim();
         const correo = document.getElementById('correo').value.trim();
         const mensaje = document.getElementById('mensaje').value.trim();
 
-        // Validar los campos
+        // Valida todos los campos
         if (nombre && correo && mensaje && validarCorreo(correo)){
             errorlabel.style.display = 'none';
             agregarConsulta(nombre, correo, mensaje);
@@ -26,13 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    function validarCorreo(correo){
-        const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return regexCorreo.test(correo);
-    }
+function validarCorreo(correo){
+    const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
+    return regexCorreo.test(correo);
+}
+
 
     // Agregar consulta a la página y guardarla en el LocalStorage
-    function agregarConsulta(nombre, correo, mensaje) {
+    function agregarConsulta(nombre, correo, mensaje){
         const consulta = {
             nombre: nombre,
             correo: correo,
@@ -43,10 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const nuevaConsulta = document.createElement("div");
         nuevaConsulta.classList.add("consulta");
         nuevaConsulta.innerHTML = `
-            <h4>${consulta.nombre} (${consulta.correo})</h4>
+        <h4>${consulta.nombre} (${consulta.correo})</h4>
             <p>${consulta.mensaje}</p>
         `;
-        consultaLista.prepend(nuevaConsulta);  // Agregar al inicio de la lista
+        consultaLista.prepend(nuevaConsulta);
 
         // Guardar la consulta en LocalStorage
         guardarConsulta(consulta);
@@ -60,8 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Cargar las consultas guardadas desde LocalStorage
-    function cargarConsultas() {
+    function cargarConsultas(){
         const consultas = JSON.parse(localStorage.getItem('consultas')) || [];
-        consultas.forEach(({ nombre, correo, mensaje }) => agregarConsulta(nombre, correo, mensaje));
+        consultas.forEach(({nombre, correo, mensaje}) => agregarConsulta(nombre, correo ,mensaje));
     }
+
 });
