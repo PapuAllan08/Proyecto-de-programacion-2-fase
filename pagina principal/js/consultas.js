@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const consultaForm = document.getElementById('consulta-formu');
-    const consultaLista = document.getElementById ('consulta');
+    const consultaLista = document.getElementById ('consulta')
     const errorlabel = document.createElement('p');
-    errorlabel.classList.add('error');
+    errorlabel.classList.add('error')
     errorlabel.textContent = 'completa el formualrio correctamente';
-    consultaForm.appendChild(errorlabel);
+    consultaForm.appendChild(errorlabel)
 
 
     //este carga las consultas almacenadas al localstorage
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     consultaForm.addEventListener("submit", function(event){
     event.preventDefault();           
         const nombre = document.getElementById('nombre').value.trim();
-        const correo = document.getElementById('correo').value.trim();
+        const correo = document.getElementById('correo').value.trim()
         const mensaje = document.getElementById('mensaje').value.trim();
 
         // Valida todos los campos
@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 function validarCorreo(correo){
+
     const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
     return regexCorreo.test(correo);
 }
@@ -42,7 +43,7 @@ function validarCorreo(correo){
         
         // Mostrar la consulta en la interfaz
         const nuevaConsulta = document.createElement("div");
-        nuevaConsulta.classList.add("consulta");
+        nuevaConsulta.classList.add("consulta")
         nuevaConsulta.innerHTML = `
         <h4>${consulta.nombre} (${consulta.correo})</h4>
             <p>${consulta.mensaje}</p>

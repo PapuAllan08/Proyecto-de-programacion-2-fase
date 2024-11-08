@@ -1,8 +1,77 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 0%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
+.formulario {
+    margin-bottom: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.tabla, .encabezado, .celda {
+    border: 1px solid #2b2b2b;
+}
+
+.encabezado, .celda {
+    padding: 8px;
+    text-align: center;
+}
+
+.boton {
+    margin-top: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    background-color: #000000;
+}
+
+.butoto {
+    border-radius: 10px;
+    border-color: black; 
+}
+
+.producto {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.inputproducto {
+    padding: 8px;
+    width: 20%;
+    margin-right: 5px;
+    border-radius: 25px;
+}
+
+.boton-editar, .boton-eliminar {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.boton-editar {
+    background-color: #FFA500;
+    color: white;
+}
+
+.boton-eliminar {
+    background-color: #FF6347;
+    color: white;
+}
+/* Encabezado */
 header {
     padding: 10px;
     display: flex;
@@ -22,7 +91,7 @@ header {
 
 }
 /* input */
-input {
+.barraa {
     font-size: 20px;
     margin-left: -20%;
     margin-top: 15%;
@@ -74,75 +143,15 @@ input {
     border-color: black;
     color: aliceblue;
 }
-
-/* Vara 100% remplazable*/
-.remplazable {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 50px;
-    background-color: white;
-    width: 100%;
-    height: 600px;
-    font-size: 300px;
-}
-.Lexus {
-    width: 90%;
-}
 /* Linea estetica */
 .linea {
-    margin-top: 11%;
+    margin-top: 2%;
     background-color: black;
     width: 100%;
     height: 5px;
+    
 
 }
-/* fichs de los carros */
-.Ficha {
-    margin-top: 6%;
-    width: 250px;
-    transition: 0.5s;
-}
-/* Animacion de la ficha en si */
-.Ficha:hover {
-    translate: 0px -15px;
-}
-/*  */
-.Ficha:hover .imgf {
-    filter: blur(5px);
-}
-
-.imgf {
-    width: 100%;
-    border-radius: 10px;
-    height: 120px;
-}
-
-.filas {
-    height: 170px;
-    justify-content: space-around;
-    display: flex;
-}
-
-.pf {
-    transition: 0.5s;
-    color: rgba(255, 255, 255, 0);
-    z-index: 0;
-    font-size: 20px;
-    text-align: center;
-    margin-top: -110px;
-}
-.Ficha:hover .pf {
-    translate: 0px 32px;
-    color: rgb(204, 204, 204);
-}
-
-.pf:hover .imgf {
-    filter: blur(5px);
-}
-
-.hed {
-    margin-top: 50px;
-}
-
 /* Footer */
 footer {
     padding-top: 60px;
@@ -178,22 +187,11 @@ footer img {
 footer img:hover {
     translate: 0px -5px;
 }
-.comentarios{
 
-    color: white;
+.hed{
+    background-color: black;
 }
 
-.terminos{
-    color: white;
-}
-
-.ayuda{
-    color: white;
-}
-
-.nosotros{
-    color: white;
-}
 a {
     text-decoration: none;
     color: white;

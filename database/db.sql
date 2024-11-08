@@ -9,9 +9,9 @@ Apellido1 varchar(30),
 Apellido2 varchar(30),
 constraint PK_ID_cliente primary key (ID_cliente),
 );
+drop table productos
 
-
-CREATE TABLE producto(
+CREATE TABLE productos(
 ID_producto int IDENTITY(1,1),--añadir la column de Id
 Nombre_vehiculo varchar(50),
 precio int not null,

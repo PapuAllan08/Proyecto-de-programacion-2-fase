@@ -27,3 +27,7 @@ function registrarCliente() {
     );
   }
 }
+
+function redirección (){
+  window.location.href ="/pagina principal/iniciar.html"
+}

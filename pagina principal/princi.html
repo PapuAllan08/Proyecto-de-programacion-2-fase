@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,10 +31,6 @@
       <img src="../imagenes/logo mc.png" alt="Logo" class="logo" Aria-label="Logo de la maraca MQRG">
         <p class="Titulo">MQRG</p>  
     </div>
-    <!-- Barra de busqueda -->
-    <div>
-      <input type="text" placeholder="En que viajaras?">
-    </div>
     <!-- Botones de inicio de sesion y registro -->
     <div class="botones">
       <a href="registropru.html" Aria-label="Link para saltar hacia el apartado de Registrarse">
@@ -47,7 +42,6 @@
     </div>
   </header>
   <div class="linea"></div>
-
   <div class="informacion">
     <div class="texto_informativo">
       <p class="TituloTexto">Lo Mas vendido
@@ -141,7 +135,7 @@
         <h3 class="reseñatitule">El mejor servicio</h3>
         <p>I love it😍</p>
         <div class="cliente">
-          <span>Kamila Selva</span>
+          <span>Daniel Romero</span>
           <span class="fecha">Today</span>
         </div>
       </div>
@@ -169,24 +163,32 @@
     <button id="loadMoreBtn" class="cargar_mas">Ver más reseñas</button>
 <br>
 
-<a href="Cata.html" Aria-label="Link para saltar hacia el Catálo"> <button class="cata"> Nuestro catalogo </button></a>
+<a href="Cata.html" Aria-label="Link para saltar hacia el Catálo"> <button class="cargar_mas"> Nuestro catalogo </button></a>
+
     <!-- La parte de abajo co  alguna informacion mas tecnica de la pagina -->
+
   <footer>
-
+    <p class="pp"><a href="Mantenimiento.html" class="comentarios" Aria-label="Link para saltar hacia el apartado de comentarios">Mantenimiento</a> </p>
+    <p>
     <a href="comentarios.html" class="comentarios" Aria-label="Link para saltar hacia el apartado de comentarios">Comentarios</a>
-    <p class="pp"></p>
+    </p>
+    <p>
     <a href="terminos.html" class="terminos" Aria-label="Link para saltar hacia los Términos y Condiciones">Terminos y condiciones</a>
-    <p></p>
+    </p>
+    <p>
     <a href="aboutus.html" class="nosotros" Aria-label="Link para saltar hacia el apartado sobre los creadores">Sobre Nosotros</a>
-    <p></p>
+    </p>
+    <p>
     <a href="ayuda.html" class="ayuda" Aria-label="Link para saltar hacia el apartado de Ayuda del cliente" >Ayuda</a>
+    </p>
+    <button onclick="mostrar()" class="estop">Cookies</button>
 
-    <a href="comentarios.html" class="comentarios" >Comentarios</a>
-    <p >Términos y Condicioneas</p>
-    <p >Acsesibilidad</p>
-    <p >Ayuda</p>
-    <p>Reseñas</p>
-    <a href="js/pruebaxdxdxdxdxdxdxdxd/html.html" Aria-label="Link para saltar hacia la info de las Cookies"><p>Manejar Cookies</p></a>
+    <div id="pop" class="popup">
+      <div class="popconten">
+          <span class="cerrar" onclick="cerrar()">&times;</span>
+          <p>Usamos cookies para mejorar tu experiencia en nuestro sitio de venta de autos. Estas cookies nos permiten recordar tus preferencias, como el color y tipo de vehículo de tu interés, y mejorar tu navegación en nuestro sitio. También utilizamos cookies para estadísticas de uso y análisis, lo que nos ayuda a entender qué vehículos buscan nuestros usuarios y mejorar nuestro servicio.</p>
+      </div>
+  </div>
 
 
     <div class="didi">
@@ -196,6 +198,8 @@
     </div>
   </footer>
 
+  
+  
 </body>
 <script src="js/principal.js"></script>
 

@@ -8,3 +8,5 @@ icon.addEventListener("click", e => {
         pass.type = "password"
     }
 });
+
+

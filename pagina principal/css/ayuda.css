@@ -4,10 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    background-image: url(..//IMAGENES/fondiu_3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 /*Estilo del contenido*/
 .content {
@@ -33,7 +29,7 @@ h1 {
 }
 
 h2 {
-    color: #ff4081;
+    color: #000000;
     font-size: 28px;
     margin-top: 40px;
 }
@@ -47,7 +43,7 @@ section:nth-child(odd) {
 }
 
 section:nth-child(even) {
-    background-color: NAVY;
+    background-color: rgb(170, 167, 167);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

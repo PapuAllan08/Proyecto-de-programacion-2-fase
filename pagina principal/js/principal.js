@@ -1,3 +1,4 @@
+// va a cargar todas las reseñas junto con su nombre
 document.getElementById("loadMoreBtn").addEventListener("click", function() {
     const reviews = [
         {title: "Me encanto", content: "Me encantaron los carros", autor: "lionel Messi", date: "5 days ago" },
@@ -35,4 +36,10 @@ document.getElementById("loadMoreBtn").addEventListener("click", function() {
     document.getElementById("loadMoreBtn").style.display = "none";
 });
 
+function mostrar(){//abre pop up
+    document.getElementById("pop").style.display ="block"
+}
 
+function cerrar(){//ciierra popup
+    document.getElementById("pop").style.display ="none"
+}
