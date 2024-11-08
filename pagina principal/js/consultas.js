@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const consultaLista = document.getElementById('consulta');
     const errorlabel = document.createElement('p');
     errorlabel.classList.add('error');
-    errorlabel.textContent = 'Le pido que complete todos los datos';
+    errorlabel.textContent = 'Completa todos los datos correctamente';
     consultaForm.appendChild(errorlabel);
 
-    // sirve oara cargar las consultas
+    // Cargar las consultas almacenadas en LocalStorage al cargar la página
     cargarConsultas();
 
     consultaForm.addEventListener("submit", function(event) {
@@ -29,6 +29,39 @@ document.addEventListener('DOMContentLoaded', () => {
     function validarCorreo(correo){
         const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regexCorreo.test(correo);
-    };
-    
-})
+    }
+
+    // Agregar consulta a la página y guardarla en el LocalStorage
+    function agregarConsulta(nombre, correo, mensaje) {
+        const consulta = {
+            nombre: nombre,
+            correo: correo,
+            mensaje: mensaje
+        };
+        
+        // Mostrar la consulta en la interfaz
+        const nuevaConsulta = document.createElement("div");
+        nuevaConsulta.classList.add("consulta");
+        nuevaConsulta.innerHTML = `
+            <h4>${consulta.nombre} (${consulta.correo})</h4>
+            <p>${consulta.mensaje}</p>
+        `;
+        consultaLista.prepend(nuevaConsulta);  // Agregar al inicio de la lista
+
+        // Guardar la consulta en LocalStorage
+        guardarConsulta(consulta);
+    }
+
+    // Guardar las consultas en LocalStorage
+    function guardarConsulta(consulta) {
+        let consultas = JSON.parse(localStorage.getItem('consultas')) || [];
+        consultas.push(consulta);
+        localStorage.setItem('consultas', JSON.stringify(consultas));
+    }
+
+    // Cargar las consultas guardadas desde LocalStorage
+    function cargarConsultas() {
+        const consultas = JSON.parse(localStorage.getItem('consultas')) || [];
+        consultas.forEach(({ nombre, correo, mensaje }) => agregarConsulta(nombre, correo, mensaje));
+    }
+});
