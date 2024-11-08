@@ -83,10 +83,12 @@ input {
     height: 600px;
     font-size: 300px;
 }
-
+.Lexus {
+    width: 100%;
+}
 /* Linea estetica */
 .linea {
-    margin-top: 1%;
+    margin-top: 11%;
     background-color: black;
     width: 100%;
     height: 5px;
@@ -95,7 +97,7 @@ input {
 /* fichs de los carros */
 .Ficha {
     margin-top: 6%;
-    width: 300px;
+    width: 250px;
     transition: 0.5s;
 }
 /* Animacion de la ficha en si */
@@ -110,26 +112,26 @@ input {
 .imgf {
     width: 100%;
     border-radius: 10px;
+    height: 120px;
 }
 
 .filas {
     height: 170px;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
 }
 
 .pf {
     transition: 0.5s;
-    color: rgba(240, 248, 255, 0);
+    color: rgba(255, 255, 255, 0);
     z-index: 0;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     margin-top: -110px;
 }
-
 .Ficha:hover .pf {
-    translate: 0px -15px;
-    color: white;
+    translate: 0px 32px;
+    color: rgb(204, 204, 204);
 }
 
 .pf:hover .imgf {
