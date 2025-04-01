@@ -19,3 +19,8 @@ Esta fase ya ha sido completada owo.
 ### Fase 2: Funcionalidad con JavaScript; esta fase se empieza al terminar las vacaciones creo
 
 En la segunda fase, añadiremos funcionalidad a la página web utilizando **JavaScript**. Esta fase se centrará en hacer la página interactiva y dinámica, mejorando la experiencia del usuario.
+
+
+### Fase 3: exposicion sobre el producto final 
+
+En la tercera fase, estariamos exponiendo todo lo que logramos en la pagina web, todo lo que logramos y tambien lo que no logramos
